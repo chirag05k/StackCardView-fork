@@ -57,7 +57,7 @@ public struct StackCard<Content: View, T: Identifiable & StackCardModelProtocol>
             .offset(x: offset)
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
             .rotationEffect(.init(degrees: getRotationAngle())) //controls the rotation angle.
-            .contentShape(Circle().trim(from: 0, to: endSwipe ? 0 : 1)) //Users can enable second card too, so we are setting the shape.
+            //.contentShape(Circle().trim(from: 0, to: endSwipe ? 0 : 1)) //Users can enable second card too, so we are setting the shape.
             .gesture(dragGesture)
             .onReceive(stackCardButtonPublisher.$direction) { direction in
                 let width = UIScreen.main.bounds.width - Utils.defaultValue
