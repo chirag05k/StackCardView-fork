@@ -20,7 +20,7 @@ public struct Utils {
     /// constant value for corner radius
     static let corerRadius: CGFloat = 15.0
     /// constant value for deafult items
-    static let defaultValue: CGFloat = 10.0
+    static let defaultValue: CGFloat = 0.0
     /// constant value for deafult items
     static let fifty: CGFloat = 10.0
 }
